@@ -12,10 +12,10 @@ export function GET() {
   posts.splice(12);
 
   return rss({
-    title: '潮流周刊',
-    description: '记录工程师 Tw93 的不枯燥生活',
-    site: 'https://weekly.tw93.fun/',
-    customData: `<image><url>https://gw.alipayobjects.com/zos/k/qv/coffee-2-icon.png</url></image>`,
+    title: '奇洛周刊',
+    description: '记录 Chiloh 的日常观察，每周日发布',
+    site: 'https://weekly.chiloh.cn/',
+    customData: `<image><url>https://chilohdata.s3.bitiful.net/avatar.png</url></image>`,
     items: posts.map((item) => {
       const url = item.url;
       const oldTitle = url.split('/posts/')[1];
